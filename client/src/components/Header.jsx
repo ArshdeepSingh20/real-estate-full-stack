@@ -53,31 +53,31 @@ export default function Header() {
 
         <ul className="flex gap-8">
           <Link to={"/search?type=sell"}>
-            <li className="hidden sm:inline   hover:underline">
+            <li className="hidden sm:inline cursor-pointer   hover:underline">
               Buy
             </li>
           </Link>
 
           <Link to={"/search?type=rent"}>
-            <li className="hidden sm:inline   hover:underline">
+            <li className="hidden sm:inline cursor-pointer   hover:underline">
               Rent
             </li>
           </Link>
 
           <Link to="/about">
-            <li className="hidden sm:inline  hover:underline">
+            <li className="hidden sm:inline cursor-pointer  hover:underline">
               About Us
             </li>
           </Link>
 
           <Link to="/contact-us">
-            <li className="hidden sm:inline   hover:underline">
+            <li className="hidden sm:inline cursor-pointer   hover:underline">
               Contact Us
             </li>
           </Link>
 
           <Link to="/create-listing">
-            <li className="hidden sm:inline bg-[#063212]  text-white p-2 px-5 rounded-xl hover:underline">
+            <li className="hidden sm:inline cursor-pointer bg-[#FE6C4C]  text-white p-2 px-5 rounded-xl hover:underline">
               Post Property
             </li>
           </Link>
