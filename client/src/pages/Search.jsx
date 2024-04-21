@@ -136,12 +136,12 @@ export default function Search() {
         <form onSubmit={handleSubmit} className="flex flex-col gap-8">
           <div className="flex items-center gap-2">
             <label className="whitespace-nowrap font-semibold">
-              Search Term:{" "}
+              Search :
             </label>
             <input
               type="text"
               id="searchTerm"
-              placeholder="search.."
+              placeholder="Search your property here ..."
               className="border rounded-lg p-3 w-full"
               onChange={handleChange}
               value={sidebarData.searchTerm}
@@ -230,14 +230,14 @@ export default function Search() {
               <option value="createdAt_asc">Oldest</option>
             </select>
           </div>
-          <button className="bg-slate-700 text-white rounded-lg p-3 hover:opacity-95">
+          <button className="bg-[#FE6C4C] text-white rounded-lg p-3 hover:opacity-95">
             Search
           </button>
         </form>
       </div>
       <div className="flex-1">
-        <h1 className="text-3xl font-semibold border-b mt-5 p-3 text-slate-700">
-          Listing Results:{" "}
+        <h1 className="text-3xl text-center border-b mt-3 p-3 ">
+          Properties
         </h1>
 
         <div className="p-7 flex flex-wrap gap-7">

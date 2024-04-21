@@ -25,16 +25,15 @@ export default function Header() {
   }, [location.search]);
 
   return (
-    <header className="bg-slate-200 shadow-md">
+    <header className="bg-white shadow-md ">
       <div className="flex justify-between items-center max-w-5xl mx-auto p-3">
         <Link to="/">
-          <h1 className="text-sm font-bold sm:text-xl flex flex-wrap">
-            <span className="text-slate-500">Real</span>
-            <span className="text-slate-700">Estate</span>
+          <h1 className="text-sm font-semibold sm:text-xl flex flex-wrap">
+            <span className="">HomeHive</span>
           </h1>
         </Link>
 
-        <form
+        {/* <form
           onSubmit={handleSubmit}
           className="bg-slate-100 p-3 rounded-lg flex items-center"
         >
@@ -48,18 +47,30 @@ export default function Header() {
           <button>
             <FaSearch className="text-slate-600" />
           </button>
-        </form>
+        </form> */}
 
-        <ul className="flex gap-4">
-          <Link to="/">
+        <ul className="flex gap-8">
+          <Link to={"/search?type=sell"}>
             <li className="hidden sm:inline text-slate-700  hover:underline">
-              Home
+              Buy
+            </li>
+          </Link>
+
+          <Link to={"/search?type=rent"}>
+            <li className="hidden sm:inline text-slate-700  hover:underline">
+              Rent
             </li>
           </Link>
 
           <Link to="/about">
             <li className="hidden sm:inline text-slate-700  hover:underline">
-              About
+              About Us
+            </li>
+          </Link>
+
+          <Link to="/contact-us">
+            <li className="hidden sm:inline text-slate-700  hover:underline">
+              Contact Us
             </li>
           </Link>
 

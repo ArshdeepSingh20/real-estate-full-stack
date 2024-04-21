@@ -162,7 +162,7 @@ export default function CreateListing() {
   return (
     <main className="p-3 max-w-4xl mx-auto">
       <h1 className="text-3xl font-semibold text-center my-7">
-        Create a listing
+        Sell / Rent your Property
       </h1>
 
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
@@ -290,7 +290,7 @@ export default function CreateListing() {
               />
               <div className="flex  flex-col items-center">
                 <p>Regular Price</p>
-                <span className="text-xs">($ / month)</span>
+                <span className="text-xs">(&#8377; / month)</span>
               </div>
             </div>
             {formData.offer && (
@@ -306,8 +306,8 @@ export default function CreateListing() {
                   value={formData.discountedPrice}
                 />
                 <div className="flex  flex-col items-center">
-                  <p>Discounted Price</p>
-                  <span className="text-xs">($ / month)</span>
+                  <p>Discount Price</p>
+                  <span className="text-xs">(&#8377; / month)</span>
                 </div>
               </div>
             )}
@@ -367,9 +367,9 @@ export default function CreateListing() {
             })}
           <button
             disabled={loading || uploading}
-            className="p-3 bg-slate-700 rounded-lg text-white uppercase hover:opacity-95 disabled:opacity-80"
+            className="p-3 bg-[#FE6C4C] font-semibold rounded-lg text-white hover:opacity-95 disabled:opacity-80"
           >
-            {loading ? "creating... " : "create listing"}
+            {loading ? "listing your property... " : "List your property"}
           </button>
           {error && <p className="text-red-700 text-sm">{error}</p>}
         </div>

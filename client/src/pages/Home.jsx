@@ -6,6 +6,7 @@ import SwiperCore from "swiper";
 import "swiper/css/bundle";
 import axios from "axios";
 import ListingItem from "../components/ListingItem";
+import { MdArrowRightAlt, MdOutlineArrowRight } from "react-icons/md";
 
 export default function Home() {
   const [offerListings, setOfferListings] = useState([]);
@@ -59,22 +60,21 @@ export default function Home() {
       {/* top */}
 
       <div className="flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto">
-        <h1 className="text-slate-700 font-bold text-3xl lg:text-6xl">
-          Find your next <span className="text-slate-500">perfect</span> <br />
-          place with ease
+        <h1 className="  text-3xl lg:text-6xl">
+         FIND YOUR NEXT PERFECT <br /> PLACE WITH EASE.
         </h1>
 
-        <div className="text-gray-400 text-xs sm:text-sm">
-          Real-Estate will help you find your future home fast, easy and
+        <div className=" text-xs sm:text-sm">
+          HomeHive will help you find your future home fast, easy and
           comfortable. <br /> We have a wide variety of properties for you to
           choose
         </div>
 
         <Link
           to={"/search"}
-          className="text-xs sm:text-sm font-bold hover:underline text-blue-900"
+          className="flex justify-center rounded-3xl items-center bg-[#FE6C4C] w-[180px] p-2 hover:opacity-95 text-white"
         >
-          Lets gets started ...
+          Get Started <MdArrowRightAlt className="ml-1 text-3xl"/>
         </Link>
       </div>
 
@@ -102,11 +102,11 @@ export default function Home() {
         {offerListings && offerListings.length > 0 && (
           <div className="">
             <div className="my-3">
-              <h2 className="text-2xl font-semibold text-slate-600">
+              <h2 className="text-4xl ">
                 Recent offers
               </h2>
               <Link
-                className="text-sm text-blue-800 hover:underline"
+                className="text-sm text-[#FE6C4C] hover:underline"
                 to={"/search?offer=true"}
               >
                 Show more offers
@@ -123,11 +123,11 @@ export default function Home() {
         {rentListings && rentListings.length > 0 && (
           <div className="">
             <div className="my-3">
-              <h2 className="text-2xl font-semibold text-slate-600">
-                Recent places for rent
+            <h2 className="text-4xl ">
+                Recent places for <span className="text-[#FE6C4C]">Rent</span>
               </h2>
               <Link
-                className="text-sm text-blue-800 hover:underline"
+                className="text-sm text-[#FE6C4C] hover:underline"
                 to={"/search?type=rent"}
               >
                 Show more places for rent
@@ -144,11 +144,11 @@ export default function Home() {
         {saleListings && saleListings.length > 0 && (
           <div className="">
             <div className="my-3">
-              <h2 className="text-2xl font-semibold text-slate-600">
-                Recent places for sale
+            <h2 className="text-4xl ">
+                Recent places for <span className="text-[#FE6C4C]">Sale</span>
               </h2>
               <Link
-                className="text-sm text-blue-800 hover:underline"
+                className="text-sm text-[#FE6C4C] hover:underline"
                 to={"/search?type=sell"}
               >
                 Show more places for sale

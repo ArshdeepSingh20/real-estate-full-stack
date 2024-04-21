@@ -42,7 +42,7 @@ export default function SignUp() {
   };
 
   return (
-    <div className="p-3 max-w-lg mx-auto">
+    <div className="p-6 rounded-lg max-w-lg mx-auto bg-white mt-10 ">
       <h1 className="text-3xl text-center font-semibold my-7">Sign Up</h1>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -75,7 +75,7 @@ export default function SignUp() {
 
         <button
           disabled={loading}
-          className="bg-slate-700 rounded-lg text-white p-3 uppercase hover:opacity-95 disabled:opacity-80"
+          className="bg-[#FE6C4C] rounded-lg text-white p-3 font-semibold hover:opacity-95 disabled:opacity-80"
         >
           {loading ? "Signing Up..." : "Sign Up"}
         </button>
@@ -85,7 +85,7 @@ export default function SignUp() {
 
       <div className="flex gap-2 mt-5">
         <p>Already have an account?</p>
-        <Link to={"/sign-in"} className="text-blue-700">
+        <Link to={"/sign-in"} className="text-[#FE6C4C] hover:underline">
           Sign in
         </Link>
       </div>

@@ -175,7 +175,7 @@ export default function Profile() {
   };
 
   return (
-    <div className="p-2 max-w-lg mx-auto">
+    <div className="p-6 rounded-lg max-w-lg mx-auto bg-white mt-10 ">
       <h1 className="text-3xl text-center font-semibold my-7">Profile</h1>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -262,7 +262,7 @@ export default function Profile() {
         {updateSuccess ? "User details updated successfully!!" : ""}
       </p>
       <button onClick={handleShowListings} className="text-green-700 w-full">
-        Show Listings
+        Show Properties
       </button>
       <p className="text-red-700 mt-5">
         {showListingError ? "Error in showing listing" : ""}
@@ -270,7 +270,7 @@ export default function Profile() {
       {userListings && userListings.length > 0 && (
         <div className="flex flex-col gap-4">
           <h1 className="text-center mt-7 text-2xl font-semibold">
-            Your Listings
+            Your listed properties
           </h1>
           {userListings.map((listing) => (
             <div
