@@ -2,11 +2,11 @@ import React from "react";
 
 function AboutUs() {
   return (
-    <div className="container mx-auto p-10 bg-white mt-8 rounded-3xl">
+    <div className="container mx-auto p-5 md:p-20 bg-white mt-8 rounded-3xl">
       <div className="max-w-6xl mx-auto">
         {/* Introduction */}
-        <div className="mb-8 flex">
-          <div className="p-10">
+        <div className="mb-20 flex flex-col md:flex-row items-center">
+          <div className="md:w-1/2 md:pr-10">
             <h2 className="text-4xl font-bold mb-8 text-[#FE6C4C]">
               We’re changing the way people connect
             </h2>
@@ -23,16 +23,16 @@ function AboutUs() {
             </p>
           </div>
 
-          <div >
+          <div className="md:w-1/2 mt-5 md:mt-0">
             <img
-            className="rounded-2xl mt-11"
+              className="rounded-2xl"
               src="https://cdn.builder.io/api/v1/image/assets%2Fd35037adcd734f2b8611cb90d5f362bb%2Fa9c131b80907476b8ea995bbc0a91fb3"
               alt="homehive"
             />
           </div>
         </div>
         {/* Our Mission */}
-        <div className="mb-8 p-10">
+        <div className="mb-20 p-5 md:p-1">
         <h2 className="text-4xl font-bold mb-8 text-[#FE6C4C]">Our Mission</h2>
           <p className="text-lg mb-4">
             <span className="font-bold text-2xl">HomeHive</span> is committed to redefining the real estate experience. Our
@@ -47,11 +47,11 @@ function AboutUs() {
           </p>
 
           <div className="flex justify-center mt-5">
-          <img className="rounded-2xl " src="https://cdn.builder.io/api/v1/image/assets%2Fd35037adcd734f2b8611cb90d5f362bb%2F36bf5b74c5514aea9ffd2a786a976fef" alt="" />
+          <img className="rounded-2xl" src="https://cdn.builder.io/api/v1/image/assets%2Fd35037adcd734f2b8611cb90d5f362bb%2F36bf5b74c5514aea9ffd2a786a976fef" alt="" />
           </div>
         </div>
         {/* Key Statistics */}
-        <div className="mb-8 p-10">
+        <div className="mb-20 p-5 md:p-1">
         <h2 className="text-4xl font-bold mb-8 text-[#FE6C4C]">Key Statistics</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="p-4 bg-gray-100 rounded-lg">
@@ -73,7 +73,7 @@ function AboutUs() {
           </div>
         </div>
         {/* Our Values */}
-        <div className="mb-8 p-10">
+        <div className="mb-20 p-5 md:p-1">
         <h2 className="text-4xl font-bold mb-8 text-[#FE6C4C]">Our Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -105,7 +105,7 @@ function AboutUs() {
           </div>
         </div>
         {/* Our Team */}
-        <div className="mb-8 p-10">
+        <div className="mb-20 p-5 md:p-1">
         <h2 className="text-4xl font-bold mb-8 text-[#FE6C4C]">Our Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="p-4 bg-gray-100 rounded-lg">
@@ -143,4 +143,3 @@ function AboutUs() {
 }
 
 export default AboutUs;
-
