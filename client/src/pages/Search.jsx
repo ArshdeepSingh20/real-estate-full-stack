@@ -242,7 +242,7 @@ export default function Search() {
 
         <div className="p-7 flex flex-wrap gap-7">
           {!loading && listings.length === 0 && (
-            <p className="text-xl text-slate-700">No listing found!</p>
+            <p className="text-xl text-slate-700">No property found!</p>
           )}
 
           {loading && (

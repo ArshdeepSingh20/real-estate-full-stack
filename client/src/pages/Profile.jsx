@@ -200,7 +200,7 @@ export default function Profile() {
           ) : filePerc > 0 && filePerc < 100 ? (
             <span className="text-slate-700">{`Uploading ${filePerc}%`}</span>
           ) : filePerc === 100 ? (
-            <span className="text-green-700">Image successfully uploaded!</span>
+            <span className="text-[#063212]">Image successfully uploaded!</span>
           ) : (
             ""
           )}
@@ -232,16 +232,16 @@ export default function Profile() {
 
         <button
           disabled={loading}
-          className="bg-slate-700 text-white rounded-lg p-3 uppercase hover:opacity-95 disabled:opacity-80"
+          className="bg-[#FE6C4C] text-white rounded-lg p-3 hover:opacity-95 disabled:opacity-80"
         >
-          {loading ? "updating..." : "Update"}
+          {loading ? "updating..." : "Update your profile"}
         </button>
 
         <Link
-          className="text-white bg-green-700 p-3 rounded-lg uppercase text-center hover:opacity-95"
+          className="text-white bg-[#063212] p-3 rounded-lg text-center hover:opacity-95"
           to={"/create-listing"}
         >
-          Create Listing
+          List your property
         </Link>
       </form>
 
@@ -258,10 +258,10 @@ export default function Profile() {
       </div>
 
       <p className="text-red-700 mt-5">{error ? error : ""}</p>
-      <p className="text-green-700 mt-5">
+      <p className="text-[#063212]-700 mt-5">
         {updateSuccess ? "User details updated successfully!!" : ""}
       </p>
-      <button onClick={handleShowListings} className="text-green-700 w-full">
+      <button onClick={handleShowListings} className="text-[#063212] w-full">
         Show Properties
       </button>
       <p className="text-red-700 mt-5">
@@ -299,7 +299,7 @@ export default function Profile() {
                   Delete
                 </button>
                 <Link to={`/update-listing/${listing._id}`}>
-                  <button className="text-green-700 hover:underline">
+                  <button className="text-[#063212] hover:underline">
                     Edit
                   </button>
                 </Link>

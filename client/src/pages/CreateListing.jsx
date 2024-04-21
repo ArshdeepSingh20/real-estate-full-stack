@@ -206,7 +206,7 @@ export default function CreateListing() {
                 onChange={handleChange}
                 checked={formData.type === "sell"}
               />
-              <span>Sell</span>
+              <span>Sale</span>
             </div>
             <div className="flex gap-2">
               <input
@@ -283,7 +283,7 @@ export default function CreateListing() {
                 id="regularPrice"
                 required
                 min={"50"}
-                max={"1000000"}
+                max={"10000000"}
                 className="p-3 border-gray-300 rounded-lg"
                 onChange={handleChange}
                 value={formData.regularPrice}
@@ -300,7 +300,7 @@ export default function CreateListing() {
                   id="discountedPrice"
                   required
                   min={"0"}
-                  max={"5000"}
+                  max={formData.regularPrice-1}
                   className="p-3 border-gray-300 rounded-lg"
                   onChange={handleChange}
                   value={formData.discountedPrice}
@@ -335,7 +335,7 @@ export default function CreateListing() {
               type="button"
               disabled={uploading}
               onClick={handleImageSubmit}
-              className="p-3 border border-green-700 text-green-700 rounded uppercase hover:shadow-lg disabled:opacity-80"
+              className="p-3 border border-[#063212] text-[#063212] rounded  hover:shadow-lg disabled:opacity-80"
             >
               {uploading ? "Uploading..." : "Upload"}
             </button>
