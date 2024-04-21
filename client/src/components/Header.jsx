@@ -25,12 +25,12 @@ export default function Header() {
   }, [location.search]);
 
   return (
-    <header className="bg-white shadow-md ">
+    <header className="bg-white shadow-md h-14">
       <div className="flex justify-between items-center max-w-5xl mx-auto p-3">
         <Link className="flex" to="/">
           
           <h1 className="text-sm font-semibold sm:text-xl flex justify-center items-center">
-          <img className="mr-3" src="https://cdn.builder.io/api/v1/image/assets%2Fd35037adcd734f2b8611cb90d5f362bb%2F224b03a101b44a63ac86b463277cbd69" alt="homehive" />
+          <img className="mr-3 h-7" src="https://cdn.builder.io/api/v1/image/assets%2Fd35037adcd734f2b8611cb90d5f362bb%2F224b03a101b44a63ac86b463277cbd69" alt="homehive" />
             <span className="">HomeHive</span>
           </h1>
         </Link>
@@ -53,28 +53,36 @@ export default function Header() {
 
         <ul className="flex gap-8">
           <Link to={"/search?type=sell"}>
-            <li className="hidden sm:inline text-slate-700  hover:underline">
+            <li className="hidden sm:inline   hover:underline">
               Buy
             </li>
           </Link>
 
           <Link to={"/search?type=rent"}>
-            <li className="hidden sm:inline text-slate-700  hover:underline">
+            <li className="hidden sm:inline   hover:underline">
               Rent
             </li>
           </Link>
 
           <Link to="/about">
-            <li className="hidden sm:inline text-slate-700  hover:underline">
+            <li className="hidden sm:inline  hover:underline">
               About Us
             </li>
           </Link>
 
           <Link to="/contact-us">
-            <li className="hidden sm:inline text-slate-700  hover:underline">
+            <li className="hidden sm:inline   hover:underline">
               Contact Us
             </li>
           </Link>
+
+          <Link to="/create-listing">
+            <li className="hidden sm:inline bg-[#063212]  text-white p-2 px-5 rounded-xl hover:underline">
+              Post Property
+            </li>
+          </Link>
+
+
 
           <Link to="profile">
             {currentUser ? (
