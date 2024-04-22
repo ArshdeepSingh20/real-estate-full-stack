@@ -12,6 +12,7 @@ import UpdateListing from "./pages/UpdateListing";
 import Listings from "./pages/Listings";
 import Search from "./pages/Search";
 import ContactUs from "./pages/ContactUs";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/listing/:listingId" element={<Listings/>} />
         <Route path="/search" element={<Search/>} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
