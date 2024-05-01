@@ -42,7 +42,7 @@ export default function Home() {
 
     const fetchSaleListings = async () => {
       try {
-        const res = await axios.get(`/api/v1/listings/get?type=salel&limit=4`);
+        const res = await axios.get(`/api/v1/listings/get?type=sale&limit=4`);
 
         const data = await res.data;
 

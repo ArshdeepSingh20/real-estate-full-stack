@@ -305,7 +305,7 @@ export default function UpdateListing() {
                 id="regularPrice"
                 required
                 min={"50"}
-                max={"1000000"}
+                max={"100000000"}
                 className="p-3 border-gray-300 rounded-lg"
                 onChange={handleChange}
                 value={formData.regularPrice}
@@ -322,7 +322,7 @@ export default function UpdateListing() {
                   id="discountedPrice"
                   required
                   min={"0"}
-                  max={"5000"}
+                  max={formData.regularPrice - 1}
                   className="p-3 border-gray-300 rounded-lg"
                   onChange={handleChange}
                   value={formData.discountedPrice}
